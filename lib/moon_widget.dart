@@ -35,11 +35,8 @@ class MoonWidget extends StatelessWidget {
     return SizedBox(
       width: size,
       height: size,
-      child: Transform.scale(
-        scale: size / (resolution * 2),
         child: CustomPaint(
           painter: MoonPainter(moonWidget: this),
-        ),
       ),
     );
   }
